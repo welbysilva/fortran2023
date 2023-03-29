@@ -3,9 +3,9 @@ program pi
 !
 !========================================
 implicit none
-integer, parameter :: lp = kind(1.q0)
-integer, parameter :: dp = kind(1.d0)
-integer, parameter :: sp = kind(1.e0)
+integer, parameter :: lp = selected_real_kind(p=30)
+integer, parameter :: dp = selected_real_kind(p=15)
+integer, parameter :: sp = selected_real_kind(p=6)
 real(lp) :: pi_lp
 real(dp) :: pi_dp
 real(sp) :: pi_sp
